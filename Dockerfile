@@ -3,10 +3,10 @@ FROM ubuntu:xenial
 MAINTAINER Daniel Miller <dmiller15@uchicago.edu> 
 
 RUN apt-get update -y && apt-get install -y \
-    python \
-    python-dev \
+    python3 \
+    python3-dev \
     build-essential \
     virtualenv \
-    python-pip
+    python3-pip
 
-RUN pip install --upgrade cutadapt
+RUN pip install --upgrade 'cutadapt==1.18'
