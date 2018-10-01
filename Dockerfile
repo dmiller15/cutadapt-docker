@@ -9,4 +9,4 @@ RUN apt-get update -y && apt-get install -y \
     virtualenv \
     python3-pip
 
-RUN pip install --upgrade 'cutadapt==1.18'
+RUN pip3 install --upgrade 'cutadapt==1.18'
